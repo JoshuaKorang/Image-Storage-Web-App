@@ -11,11 +11,6 @@ A web-based image storage solution designed to efficiently store images on both 
 - **🛠️ Built with Modern Tools**: Developed using **Express.js**, **JavaScript**, **Node.js**, **HTML**, **CSS**, and **Multer** to ensure a smooth, reliable experience.
 
 
-https://github.com/user-attachments/assets/40243ff5-31c8-4759-b1c5-50a702ff4e33
+https://github.com/user-attachments/assets/064f28b7-e08a-46ee-9ca1-b531def0c76d
 
-
-
-
-
-https://github.com/user-attachments/assets/e341cc81-dd5e-4f7b-bf74-67a42f0aee3a
 
