@@ -1,0 +1,3 @@
+Install node on computer
+Install dependencies: express,colors, multer, mysql
+Run "npm run server"

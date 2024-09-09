@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Secular One', sans-serif
+  }
+
+  .bg {
+    height: 3000px;
+    position: relative;
+    font-size: 2vw;
+    overflow: hidden;
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
+    align-items: center; /* Add this line */
+  }
+
+  body.aboutBody{
+    background: #1f2028
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide scrollbar for all elements */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .TextOnButton{
+    color: #fff;
+    font-size: 50px;
+    position: absolute; /* Add this line */
+    top:40%;
+    bottom: 100px; /* Add this line */
+    left: 50%; /* Add this line */
+    transform: translateX(-50%); /* Add this */
+  }
+
+  .DownButton a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .DownButton {
+    text-align: center;
+    position: absolute;
+    top: 43%; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /*margin-top: 2650px;*/
+  }
+  
+  .DownButton h1 {
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  .DownButton a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+
+  .DownButton a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+  
+  .text {
+    color: #1a1a1a;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    position: relative;
+    bottom: -300px;
+  }
+  
+  .text h1 {
+    font-size: 12vw;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, transparent 100%, white 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .textBottom h1 {
+    font-size: 12vw;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, transparent 100%, white 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    bottom: -2000px;
+    
+  }
+  
+  .text h1::before {
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    border-right: 3px solid white;
+    -webkit-text-stroke: 0vw white;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%, 10%, 100% {
+      width: 0;
+    }
+    70%, 90% {
+      width: 120%;
+    }
+  }
+  
+  .containerOnImages {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerOnImages2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow:hidden;
+  }
+
+  .background-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .ExploreButton {
+    text-align: center;
+  }
+  
+  .ExploreButton h1 {
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  .ExploreButton a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+
+  .ExploreButton a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+  
+
+  .header h2{
+    color:white;
+  }
+
+  .header h3{
+    color:white;
+  }
+  
+  button {
+    padding: 10px;
+    width: 70px;
+    color: black;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    border: px solid black;
+    background-color: white;
+    font-size: 0.9rem;   
+  }
+  
+  .app {
+    max-width: 1224px;
+    width: 92%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .header h2 {
+    min-width: fit-content;
+  }
+  
+  .server-message {
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  .input-div {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    position: relative;
+  }
+  
+  .input-div .browse {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .saved-div,
+  .queued-div {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    border: 5px solid black;
+    background-color: white;
+  }
+  
+    .saved-div .image,
+    .queued-div .image {
+      height: 150px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+  }
+
+  
+  
+  .saved-div .image:nth-child(4n),
+  .queued-div .image:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  .saved-div .image img,
+  .queued-div .image img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .saved-div .image span,
+  .queued-div .image span {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+  }
+  
+  .saved-div .image span:hover,
+  .queued-div .image span:hover {
+    opacity: 0.8;
+  }
+  
+  .saved-div .span--hidden,
+  .queued-div .span--hidden {
+    visibility: hidden;
+  }
+
+  .page-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+  }
+  
